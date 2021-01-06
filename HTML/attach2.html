@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Template</title>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width-device-width , initial=1">
+        <style>
+            * {
+                box-sizing: border box;
+            }
+            body{
+                font-family: sans-serif, arial, helvetica;
+            }
+            header {
+                background-color: rosybrown;
+                padding:30px;
+                text-align:center;
+                font-size: 35px;
+                color: black;
+            }
+            section {
+                display: -webkit-flex;
+                display: flex;
+            }
+            nav {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                background: rgba(194, 9, 163, 0.918);
+                padding: 20px;
+            }
+                nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+                article {
+                -webkit-flex: 3;
+                -ms-flex: 3;
+                flex: 3;
+                background-color: #d67dc7;
+                padding: 10px;
+            }
+                footer {
+                background-color: rgb(77, 6, 49);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+                @media (max-width: 600px) {
+                section {
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+            }
+            }
+
+        </style>
+        
+            </head>
+            <body>
+                <header>
+                    <h1>My CSS Template</h1>
+                </header>
+
+            <section>
+                <nav>
+                    <ul>
+                        <li>Paris</li>
+                        <li>Tokyo</li>
+                        <li>London</li>
+                    </ul>
+                 </nav>
+                 <article>
+                     <p>This section is for article.</p>
+                 </article>
+            </section>
+            <footer>
+                <p>This is a footer section.</p>
+            </footer>
+                
+                
+    </body>
+</html>
