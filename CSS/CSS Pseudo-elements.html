@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+p::first-line {
+  color: #0000ff
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">CSS Pseudo-Elements</h1>
+
+<h2>Select some text on this page:</h2>
+
+<p>Pseudo elements uses double colon(::).<br>
+............................................<br>
+.............................................<br>
+Fourth line in text.</p>
+<div>This is some text in a div element.</div>
+
+<p><strong>Note:</strong> Firefox supports an alternative, the ::-moz-selection property.</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><title>attrselectors</title>
+    <style>
+        a[target]{
+            background-color:thistle;
+        }
+        [title~=flower]{
+            border: 3px solid red;
+        }
+            </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">CSS Attr Selectors</h1>
+        <p>
+            According to attribute selector all the links with attribute target will get a background color as thistle.
+        </p>
+        <a href="http://www.w3schools.com">This link doesn't have a attribute as target.</a>
+        <a href="http://www.w3schools.com" target="_blank"><br>This link  have a attribute as target as "_blank".</a>
+        <a href="http://www.w3schools.com"target="_top"><br>This link have a attribute as target as "_top".</a>
+
+        <p><br>Only those image will get border which will have flower in title attribute.</p>
+        <img src="https://www.w3schools.com/css/klematis.jpg" title="klematis flower" width="150" height="113">
+        <img src="https://www.w3schools.com/css/img_flwr.gif" title="flower" width="224" height="162">
+        <img src="https://www.w3schools.com/css/img_tree.gif" title="tree" width="200" height="358">
+    </body>
+</html>
