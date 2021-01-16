@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html><head><title>text effects</title>
+<style>
+    body{
+        background-image: radial-gradient(papayawhip,pink);
+    }
+    p.c1{
+        width:200px;
+        white-space: nowrap;
+        text-overflow: clip;
+        border:1px solid black;
+        overflow:hidden;
+    }
+    p.c2{
+        width:200px;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        border:1px solid black;
+        overflow:hidden;
+    }
+    p.c3{
+        width:200px;
+        word-wrap: break-word;
+        border:1px solid black;
+    }
+    p.c4{
+        width:200px;
+        word-break: break-all;
+        border:1px solid black;
+    }
+    p.c5{
+        width:200px;
+        word-break:keep-all;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">CSS Text Effects</h1>
+    <h3>Text-overflow:clip</h3>
+    <p class="c1">It was just a burger. Why couldn't she understand that?
+         She knew he'd completely changed his life around her eating habits,
+         so why couldn't she give him a break this one time? She wasn't even supposed to have found out.
+        Yes, he had promised her and yes, 
+        he had broken that promise, but still in his mind, all it had been was just a burger.</p>
+        <h3>Text-overflow:ellipsis</h3>
+    <p class="c2">It was just a burger. Why couldn't she understand that?
+        She knew he'd completely changed his life around her eating habits,
+        so why couldn't she give him a break this one time? She wasn't even supposed to have found out.
+        Yes, he had promised her and yes, 
+        he had broken that promise, but still in his mind, all it had been was just a burger.</p>
+        <h3>Word-wrap:break-word</h3>
+    <p class="c3">It was just a burger. Why couldn't she understand that?
+         She knew he'd completely changed his life around her eating habits,
+         so why couldn't she give him a break this one time? She wasn't even supposed to have found out.
+        Yes, he had promised her and yes, 
+        he had broken that promise, but still in his mind, all it had been was just a burger.</p>
+
+        <h3>Word-break:break all<h4>Here word will break at a character.</h4></h3>
+        <p class="c4">It was just a burger. Why couldn't she understand that?
+            She knew he'd completely changed his life around her eating habits,
+            so why couldn't she give him a break this one time? She wasn't even supposed to have found out.
+           Yes, he had promised her and yes, 
+           he had broken that promise, but still in his mind, all it had been was just a burger.</p>
+    
+    <h3>Word-break:keep all<h4>Here word will break at hyphens instead of a character.</h4></h3>
+           <p class="c5">It was just a burger. Why couldn't she understand that?
+            She knew he'd completely changed his life around her eating habits,
+            so why couldn't she give him a break this one time? She wasn't even supposed to have found out.
+           Yes, he had promised her and yes, 
+           he had broken that promise, but still in his mind, all it-had-been-was-just-a-burger.</p>
+</body></html>

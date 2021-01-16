@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+h1.s{
+    border: 2px pink ridge;
+    border-radius:15px;
+    padding:5px;
+    overflow:auto;
+    background-color: lightgreen;
+}
+#rcorners1 {
+  border-radius: 50px / 15px;
+  background: darkolivegreen;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners2 {
+  border-radius: 15px / 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 50%;
+  background: yellowgreen;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+} 
+</style>
+</head>
+<body>
+
+<h1 class="s" style="text-align: center;">CSS Rounded Borders</h1>
+
+<p>Elliptical border - border-radius: 50px / 15px:</p>
+<p id="rcorners1"></p>
+
+<p>Elliptical border - border-radius: 15px / 50px:</p>
+<p id="rcorners2"></p>
+
+<p>Ellipse border - border-radius: 50%:</p>
+<p id="rcorners3"></p>
+
+</body>
+</html>

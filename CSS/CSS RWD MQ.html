@@ -1,0 +1,94 @@
+
+<!DOCTYPe html>
+<html>
+    <head>
+        <title>MQ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                }
+
+                [class*="col-"] {
+                float: left;
+                padding: 15px;
+                }
+            .col-1{width:8.33%;}
+            .col-2{width:16.66%;}
+            .col-3{width:25%;}
+            .col-4{width:31.33%;}
+            .col-5{width:41.66%;}
+            .col-6{width:50%;}
+            .col-7{width:58.33%;}
+            .col-8{width:66.66%;}
+            .col-9{width:75%;}
+            .col-10{width:83.33%;}
+            .col-11{width:91.66%;}
+            .col-12{width:100%;}
+
+            @media only screen and (max-width:900px){
+                [class*="col-"]{
+                    width:100%;
+                }
+            }
+
+            html{
+                font-family:'Lucida Sans',sans-serif;
+            }
+
+            .header{
+                background-image: radial-gradient(white,pink);
+                padding:15px;
+                text-align: center;
+                color:black;
+            }
+
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                }
+
+                .menu li {
+                padding: 8px;
+                margin-bottom: 7px;
+                background-image:radial-gradient(white, #33b5e5);
+                color: #ffffff;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                }
+
+                .menu li:hover {
+                background-image:linear-gradient(white, #0099cc);
+                }
+        </style>
+    </head>
+<body>
+    <h1 style="text-align: center;">CSS Media Queries</h1>
+    <div class="header">
+        <h1>My CSS Template</h1>
+    </div>
+    <p style="font-size: 18px;">Resize the browser (less than 900px width).</p>
+    <div class="row">
+        <div class="col-3 menu">
+          <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+          </ul>
+        </div>
+        <div class="col-9">
+            <h1>Main Content</h1>
+        <p>Some Content here....</p>
+        </div>
+        </div>
+
+        
+</body>
+</html>

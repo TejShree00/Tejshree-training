@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradients</title>
+        <style>
+            #rg{
+            background-image:radial-gradient(white,purple,black);
+            overflow:auto;
+            }
+            #lg1{
+                height:150px;
+                width:150px;
+                background-image:linear-gradient(green,yellow,orange,red);
+            }
+            #rg1{
+                height:150px;
+                width:150px;
+                background-image:radial-gradient(closest-side at 60% 55%,green,yellow,orange,red);
+            }
+            #rg2{
+                height:150px;
+                width:150px;
+                background-image:radial-gradient(farthest-side at 60% 55%,green,yellow,orange,red);
+            }
+            #rg3{
+                height:150px;
+                width:150px;
+                background-image:radial-gradient(closest-corner at 60% 55%,green,yellow,orange,red);
+            }
+            #rg4{
+                height:150px;
+                width:150px;
+                background-image:radial-gradient(farthest-corner at 60% 55%,green,yellow,orange,red);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rg">
+        <h1 style="text-align: center;">CSS Gradients</h1>
+        <div>
+            <h2>linear-gradient</h2>
+            <div id="lg1"></div>
+
+            <h2>closest-side:</h2>
+            <div id="rg1"></div>
+
+            <h2>farthest-side:</h2>
+            <div id="rg2"></div>
+
+            <h2>closest-corner:</h2>
+            <div id="rg3"></div>
+
+            <h2>farthest-corner (default):</h2>
+            <div id="rg4"></div>
+
+        </div>
+        </div>
+        
+            
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+.intro {background-color: yellow;}
+h1 {background-color: red;}
+</style>
+</head>
+<body>
+
+<h1 class="intro" style="text-align: center;">CSS Specificity</h1>
+<h1>Specificity Rules</h1>
+<p>
+    <pre>
+
+<strong>Equal specificity:</strong> the latest rule counts - If the same rule is written twice into the external style sheet, 
+then the lower rule in the style sheet is closer to the element to be styled,and therefore will be applied:
+
+A: h1<br>
+B: #content h1<br>
+C: div id="content" h1 style="color: #ffffff" 
+<br>
+The specificity of A is 1 (one element)<br>
+The specificity of B is 101 (one ID reference and one element)<br>
+The specificity of C is 1000 (inline styling)<br>
+
+Since 1 is less than 101 is less than 1000, the third rule (C) has a greater level of specificity, and therefore will be applied.
+</pre>
+</p>
+
+</body>
+</html>

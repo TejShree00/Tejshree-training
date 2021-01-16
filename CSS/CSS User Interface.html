@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UI</title>
+<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  overflow: auto;
+}
+
+div.c1{
+    resize: horizontal;
+}
+div.c2{
+    resize: vertical;
+}
+
+div.c3{
+    resize:both;
+}
+textarea{
+    resize:both;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">CSS User Interface</h1>
+<p>Resizable div area</p>
+
+<div class="c1">
+  <p>To resize: Click and drag the bottom right corner of this div element(horizontally).</p>
+</div><br>
+
+<div class="c2">
+    <p>To resize: Click and drag the bottom right corner of this div element(vertically).</p>
+  </div><br>
+
+  <div class="c3">
+    <p>To resize: Click and drag the bottom right corner of this div element(both horizontally and vertically).</p>
+  </div><br>
+  <p><b>Textarea</b></p>
+<textarea>Type here...</textarea>
+</body>
+</html>

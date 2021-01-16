@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2 {
+  counter-reset: subsection;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h3::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">CSS Counters</h1>
+
+<p>The counter for this list will go on increasing even if we don't put any numbers in headings</p>
+<h2>List 1:</h2>
+<h3>Sub list </h3>
+<h3>Sub list </h3>
+
+<h2>List 2:</h2>
+<h3>Sub list </h3>
+<h3>Sub list </h3>
+
+<h2>List 3:</h2>
+<h3>Sub list </h3>
+<h3>Sub list </h3>
+
+</body>
+</html>
