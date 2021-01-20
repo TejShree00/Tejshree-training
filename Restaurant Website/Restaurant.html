@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Restaurant Website
+        </title>
+        <style>
+            /*Variable Declaration*/
+            :root {
+                --yellow: #ffc600;
+                --black: #272727;
+            }
+
+            /*Border-Box property*/
+            *, ::before, ::after{
+                box-sizing: inherit;
+            }
+
+            /*Some attributes to follow throughout the page*/
+            body{
+                background-image:  url(topography.svg),linear-gradient(110deg,rgb(249, 61, 102), rgb(109, 71, 217));
+                font-family:Arial, Helvetica, sans-serif;
+                margin:50px;
+                letter-spacing: -1px;
+                color:var(--black);
+            }
+
+            img{
+                max-width: 100%;
+            }
+
+            /*Top Horizontal Navigation Bar*/
+            .gridnav{
+                display: grid;
+                grid-gap: 10px;
+            }
+            
+            
+            .navbar a{
+                background-color: var(--yellow);
+                display:block;
+                padding:15px;
+                color:var(--black);
+                text-align: center;
+                text-decoration: none;
+                font-weight:900;
+                font-size: 19px;
+            }
+
+            .navbar ul{
+                display:grid;
+                grid-gap:10px;
+                list-style-type: none;
+                padding: 0;
+                list-style: none;
+                grid-template-columns: auto auto auto auto auto;
+               
+                
+            }
+
+
+            /*Price Section*/
+            #pr1{
+                width:auto;
+                height:190px;
+                background-color: var(--yellow);
+                margin-top: -452px;
+                margin-left: 990px;    
+
+            }
+            #pr2{
+                text-align:center;
+                font-size: 60px;
+                padding:35px;
+            }
+            
+            #pr3{
+                text-align: center;
+                font-size: 17px;
+                font-weight: 900;
+            }
+            #pr4{
+                width:auto;
+                height:190px;
+                background-color: var(--yellow);
+                margin-top: 64px;
+                margin-left:990px;    
+
+            }
+
+            
+            /*Terry's Taco Joint*/
+            .container {
+                position: relative;
+                }
+
+            .center {
+                position: absolute;
+                top: 35%;
+                left:4%;
+                background-color: var(--yellow);
+                text-align: center;
+                font-size: 27px;
+                font-weight: 900;
+                padding:5px;
+                }
+            .center1 {
+                position: absolute;
+                top: 50%;
+                left:4%;
+                background-color: var(--yellow);
+                text-align: center;
+                font-size: 14px;
+                font-weight: 900;
+                padding:5px;
+                }
+
+
+             /*About Us*/   
+            .icon1{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-gap:20px;
+                padding-top: 20px;
+            }
+            .icon1>div{
+                background-color: white;
+                text-align: center;
+            }
+            #icon2{
+                font-size: 60px;
+            }
+            #icon3{
+                text-align: center;
+                font-size: 15px;
+                font-weight: 900;
+                color:gray;
+            }
+
+
+            /*Featured Taco Box*/
+            .featured{
+                width:100%;
+                background-color: white;
+                height:auto;
+                margin-top:20px;
+            }
+
+            .featured>img{
+                width:400px;
+                height:300px;
+                margin:50px;
+                float:left;
+            }
+
+            #fd1{
+                text-align:left;
+                font-weight: 950;
+                padding:100px;
+            
+            }
+
+
+            /*Learn More Button*/
+            button {
+                background: #ffc600;
+                border: 0;
+                padding: 10px 20px;
+            }
+
+
+            /*Instant Gram*/
+            .instant h2 {
+                display: grid;
+                grid-template-columns:1fr auto 1fr;
+                grid-gap: 20px;
+                align-items: center;
+                width:100%;
+            }
+
+            .instant h2::before, .instant h2::after {
+                display: block;
+                content: '';
+                height: 10px;
+                background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+            }
+            ::after{
+                --direction:right;
+            }
+
+            div.gallery {
+                margin: 5px;
+                float: left;
+            }
+
+            div.gallery img {
+                width: 225px;
+                height: 225px;
+            }
+
+
+                /*Browser window size should be 1100px or less than 1100px*/
+
+                @media screen and (max-width:1100px) {
+                    img{
+                        width:75%;
+                    }
+                    #pr1{
+                            width:auto;
+                            height:200px;
+                            margin-top: -454px;
+                            margin-left: 77%;  
+
+                        }
+                        #pr2{
+                            text-align:center;
+                            font-size: 60px;
+                            padding:20px;
+                        }
+                        
+                        #pr3{
+                            text-align: center;
+                            font-size: 17px;
+                            font-weight: 900;
+                        }
+                        #pr4{
+                            width:auto;
+                            height:200px;
+                            margin-top: 50px;
+                            margin-left:77%;    
+
+                        }
+                        
+                    }
+
+
+                /*Browser window size should be 800px or less than 800px*/
+
+                @media screen and (max-width:800px) {
+                    img{
+                        width:100%;
+                    }
+                    #pr1{
+                        width:50%;
+                        height: 120px;
+                        margin-left: 0px;
+                        margin-top:20px;
+                    }
+                    #pr2{
+                        text-align:center;
+                        font-size: 60px;
+                        padding:10px;
+                    }
+                    
+                    #pr3{
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 900;
+                    }
+                    #pr4{
+                        width:50%;
+                        height:120px;
+                        margin-top: -119px;
+                        margin-left:53%;  
+
+                    }
+                    .icon1{
+                        display:grid;
+                        grid-template-columns: auto auto auto;
+                    }
+                    
+                }
+
+
+                /*Browser window size should be 600px or less than 600px*/
+
+                @media screen and (max-width:600px) {
+                    #pr1{
+                        width:100%;
+                        height: 120px;
+                        margin-left:0px;
+                        margin-top:20px;
+                    }
+                    #pr2{
+                        text-align:center;
+                        font-size: 60px;
+                        padding:15px;
+                    }
+                    
+                    #pr3{
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 900;
+                    }
+                    #pr4{
+                        width:100%;
+                        height:120px;
+                        margin-top: 20px;
+                        margin-left:0px;    
+
+                    }
+                    .icon1{
+                        display:grid;
+                        grid-template-columns: auto auto;
+                    }
+
+                    div.gallery img{
+                        width:335px;
+                        height:335px;
+                        margin-left:25px;                    }
+                    
+                }
+                
+
+        </style>
+    </head>
+    <body>
+
+        <!--Top Horizontal Navigation Bar-->
+        <div class="gridnav">
+        <nav class="navbar">
+        <ul>
+            <li><a href="Restaurant.html">TACOS</a></li>
+            <li><a href="Restaurant.html">BEERS</a></li>
+            <li><a href="Restaurant.html">WINES</a></li>
+            <li><a href="Restaurant.html">DESSERTS</a></li>
+            <li><a href="Restaurant.html">RESERVATIONS</a></li>
+        
+        </ul>
+        </nav>
+        </div>
+
+        <!--Terry's Taco Joint-->
+        <div>
+        <div class="container"> <img src="taco.png" alt="Tacos" width="950px" height="450px">
+        <div class="center">Terry's Taco Joint</div>
+        <div class="center1">Pretty Good Tacos!</div>
+        </div>
+
+        <!--Price Section-->
+       <div id="pr1"><div id="pr2">$1.99<br><div id="pr3">Tacos</div></div></div>
+       <div id="pr4"><div id="pr2">$3.99<br><div id="pr3">Kambucha</div></div></div>
+       </div>
+
+       <!--About us-->
+       <div class="icon1">
+           <div id="icon2">🌮<div id="pr3">Taco<br><p id="icon3">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Animi, assumenda.</p> </div></div>
+           <div id="icon2">🍺<div id="pr3">Beer<br><p id="icon3">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Animi, assumenda.</p> </div></div>
+           <div id="icon2">🍷<div id="pr3">Wine<br><p id="icon3">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Animi, assumenda.</p> </div></div>
+           <div id="icon2">🎵<div id="pr3">Music<br><p id="icon3">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Animi, assumenda.</p> </div></div>
+       
+       </div>
+
+       <!--New Special "Featured Taco"-->
+       <div class="featured">
+           <img src="queso-taco.png" alt="Tacos">
+
+        <div id="fd1"><h2>Featured Taco</h2>
+        <p>Slim Profile, easy to hold and loaded with cheese.<br><br>
+            This is the one you have been waiting for</p>
+            <button>Learn More &#8594</button>
+        </div>
+
+    </div>
+
+    <!--Instant Gram-->
+    <div class="instant">
+        <h2>Instant Gram</h2>
+    </div>
+
+    <!--Image Gallery-->
+    <div class="gallery">
+        <img src="angle.jpg" alt="Angle">
+    </div>
+
+
+    <div class="gallery">
+        <img src="b&w.jpg" alt="Black and White">
+    </div>
+
+    
+    <div class="gallery">
+        <img src="beach.png" alt="Beach">
+    </div>
+
+
+    <div class="gallery">
+        <img src="cup.png" alt="Cup">
+    </div>
+
+
+    <div class="gallery">
+        <img src="cute.jpg" alt="Baby">
+    </div>
+
+
+    <div class="gallery">
+        <img src="dogs.jpg" alt="Dogs">
+    </div>
+
+
+    <div class="gallery">
+        <img src="light.jpg" alt="Light">
+    </div>
+
+
+    <div class="gallery">
+        <img src="reflection.jpg" alt="Reflection">
+    </div>
+    
+    
+    <div class="gallery">
+        <img src="squirrel.jpg" alt="Squirrel">
+    </div>
+
+
+    <div class="gallery">
+        <img src="time.jpg" alt="Big Clock">
+    </div>
+  
+    
+       
+    </body>
+</html>
